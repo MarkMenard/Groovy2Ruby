@@ -1,0 +1,1 @@
+Groovy2Ruby is a simple tool to translate Groovy code into Ruby code. It is based on the groovy.inspect.swingui.AstNodeToScriptAdapter from the main Groovy distribution.
