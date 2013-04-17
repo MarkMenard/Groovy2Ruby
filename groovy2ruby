@@ -39,6 +39,7 @@ import org.codehaus.groovy.classgen.Verifier
  * This is adapted from Groovy2Ruby from the Groovy distribution.
  *
  * @author Hamlet D'Arcy
+ * @author Mark Menard
  */
 public class Groovy2Ruby  {
 
