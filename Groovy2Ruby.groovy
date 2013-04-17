@@ -1,4 +1,4 @@
-#!/usr/local/groovy/bin/groovy
+#!/usr/bin/env groovy
 
 /*
  * Copyright 2003-2012 the original author or authors.
@@ -286,9 +286,6 @@ class AstNodeToScriptVisitor extends PrimaryClassNodeOperation implements Groovy
             printLineBreak()
             node?.methods?.each { visitMethod(it) }
         }
-        indented {
-            print "alias"
-        }
         print 'end'
         printDoubleBreak()
         classNameStack.pop()
@@ -346,6 +343,10 @@ class AstNodeToScriptVisitor extends PrimaryClassNodeOperation implements Groovy
         }
         printLineBreak()
         print 'end'
+        if (node.name == 'toString') {
+            printLineBreak()
+            print "alias_method :to_s, :to_string"
+        }
         printDoubleBreak()
     }
 
