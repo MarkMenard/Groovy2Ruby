@@ -52,7 +52,7 @@ public class Groovy2Ruby  {
 
         if (!args || args.length < 1) {
             println """
-Usage: Groovy2Ruby.groovy [filename]
+Usage: groovy2ruby [filename]
 where [filename] is a Groovy script
 """
         } else {
