@@ -3,3 +3,5 @@ Groovy2Ruby is a simple tool to translate Groovy code into Ruby code. It is base
 Status: This works on my Groovy code to get to a reasonable translation. Some things require some massaging, but it will get you a long way to working code.
 
 Usage: groovy2ruby <groovy_file_name>
+
+Example translation: https://gist.github.com/MarkMenard/5406155
